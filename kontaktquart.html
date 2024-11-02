@@ -1,83 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-            
-
-        </head>
-        <title>QUART MARKET</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUART MARKET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <nav>
-                <a href="homepage.html">HOME</a>
-                <a href="onamaquart.html">QUART</a>
-                <a href="dobavljaciquart.html">SUPPLIERS</a>
-                <a href="kontaktquart.html">CONTACT</a>
-            </nav>
-                    <section>
-                    <form action="https://jsonplaceholder.typicode.com/posts" method="post" title="Contact form">
-                    
-                        <h1 style="font-size: 40px; color:#000000">CONTACT US</h1>
-                        <label for="fnameid">Name:</label>
-                        <input type="text" id="fnameid" name="fname" required><br>
-                        <label for="usernameid">Username:</label>
-                        <input type="text" id="usernameid" name="username" required><br>
-                        <label for="emailid">Email:</label>
-                        <input type="email" id="emailid" name="email" required><br>
-                        <label for="passwordid">Password:</label>
-                        <input type="password" id="passwordid" name="password" required><br>
-                        <label for="ageid">Age:</label>
-                        <input type="number" id="ageid" name="age"><br>
-                        <label for="pnumberid">Phone Number:</label>
-                        <input type="tel" id="pnumberid" name="phone_number" required><br>
-                        <label for="genderid">Gender:</label>
-                        <select name="gender" id="genderid">
-                            <option value="male" selected>Male</option>
-                            <option value="female">Female</option>
-                        </select> <br>
-                        <label for="timeid">Time of writting: </label>
-                        <input type="datetime-local" id="timeid" name="time" required>
-                        <br>
-                        <label for="picid">Picture of a problem: </label>
-                        <input type="file" id="picid" name="picture">
-                         <br>
-                         <label for="problemdescriptionid">Problem description: </label><br>
-                         <textarea placeholder="Describe your problem" id="problemdescriptionid" name="problemdescription"></textarea>
-                    <br>
-                        <input type="submit">
-                    </form>
-                     <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXFBVQxrrXVmtQsfGmMpTHCccPHxmhxNSmNpHGZvRJlQNjGZglmBZFJVtHcDcQBVzgQzr" style="font-size: 20px" target="_blank">Send us an email </a>
-                    <form action="https://jsonplaceholder.typicode.com/posts" method="post" title="Your opinion">
-                    </section>
-                    <section>
-                        <h1 style="font-size: 40px; color:#000000">CUSTOMER SATISFACTION</h1>
-                     <fieldset style="width: 180px;">
-                        <legend>Rate us!</legend>
-                        <input type="radio" id="5stars" name="rating" value="5">
-                        <label for="5stars">&#127775;&#127775;&#127775;&#127775;&#127775;</label>
-                        <br>
-                        <input type="radio" id="4stars" name="rating" value="4">
-                        <label for="4stars">&#127775;&#127775;&#127775;&#127775;</label>
-                        <br>
-                        <input type="radio" id="3stars" name="rating" value="3">
-                        <label for="3stars">&#127775;&#127775;&#127775;</label>
-                        <br>
-                        <input type="radio" id="2stars" name="rating" value="2">
-                        <label for="2stars">&#127775;&#127775;</label>
-                        <br>
-                        <input type="radio" id="1stars" name="rating" value="1">
-                        <label for="1stars">&#127775;</label>
+        <img src="../First-Assignment/logoquart.jpg" alt="Logo" width="110" height="110">
+        <a href="homepage.html">HOME</a>
+        <a href="onamaquart.html">QUART</a>
+        <a href="dobavljaciquart.html">SUPPLIERS</a>
+        <a href="kontaktquart.html">CONTACT</a>
+    </nav>
 
+ <hr>
+    <div class="main-container">
+      
+        <section class="contact-section">
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post" title="Contact form">
+                <h1>CONTACT US</h1>
+                <label for="fnameid">Name:</label>
+                <input type="text" id="fnameid" name="fname" required>
+                <label for="usernameid">Username:</label>
+                <input type="text" id="usernameid" name="username" required>
+                <label for="emailid">Email:</label>
+                <input type="email" id="emailid" name="email" required>
+                <label for="passwordid">Password:</label>
+                <input type="password" id="passwordid" name="password" required>
+                <label for="ageid">Age:</label>
+                <input type="number" id="ageid" name="age">
+                <label for="pnumberid">Phone Number:</label>
+                <input type="tel" id="pnumberid" name="phone_number" required>
+                <label for="genderid">Gender:</label>
+                <select name="gender" id="genderid">
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="timeid">Time of writing:</label>
+                <input type="datetime-local" id="timeid" name="time" required>
+                <label for="picid">Picture of a problem:</label>
+                <input type="file" id="picid" name="picture">
+                <label for="problemdescriptionid">Problem description:</label>
+                <textarea placeholder="Describe your problem" id="problemdescriptionid" name="problemdescription"></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXFBVQxrrXVmtQsfGmMpTHCccPHxmhxNSmNpHGZvRJlQNjGZglmBZFJVtHcDcQBVzgQzr" target="_blank">Send us an email</a>
+        </section>
 
-                     </fieldset>
-                    </section>
-                    <section>
-                    </form>
-                    <form action="https://jsonplaceholder.typicode.com/posts" method="post" title="Products">
-                        <h1 style="font-size: 40px; color:#000000">Products</h1>
-                    <fieldset style="width: 180px;">
+        <div class="right-content">
+            <section class="customer-section">
+                <h1>CUSTOMER SATISFACTION</h1>
+                <fieldset>
+                    <legend>Rate us!</legend>
+                    <input type="radio" id="5stars" name="rating" value="5">
+                    <label for="5stars">&#127775;&#127775;&#127775;&#127775;&#127775;</label><br>
+                    <input type="radio" id="4stars" name="rating" value="4">
+                    <label for="4stars">&#127775;&#127775;&#127775;&#127775;</label><br>
+                    <input type="radio" id="3stars" name="rating" value="3">
+                    <label for="3stars">&#127775;&#127775;&#127775;</label><br>
+                    <input type="radio" id="2stars" name="rating" value="2">
+                    <label for="2stars">&#127775;&#127775;</label><br>
+                    <input type="radio" id="1stars" name="rating" value="1">
+                    <label for="1stars">&#127775;</label>
+                </fieldset>
+            </section>
+
+            <section class="products-section">
+                <form action="https://jsonplaceholder.typicode.com/posts" method="post" title="Products">
+                    <h1>Products</h1>
+                    <fieldset>
                         <legend>Which of the following products did you buy in the past month?</legend>
                         <input type="checkbox" id="fruit1" name="products" value="fruit">
                         <label for="fruit1">Fruit</label><br>
@@ -87,43 +80,27 @@
                         <label for="snacks1">Snacks</label><br>
                         <input type="checkbox" id="dairy" name="products" value="dairyproducts">
                         <label for="dairy">Dairy Products</label><br>
-                        
-
-
                     </fieldset>
-                    </form>
-                </section>
-                <section>
-            <h1 style="font-size: 40px; color:#000000">
-                        MEDIA
-                    </h1>
-
-                    <span style="color: rgb(0, 0, 0); font-size: 25px">
-                        Email:
-                    </span>
-                    
-                    <span style="color: rgb(0, 0, 0);font-size: 25px;">
-                        quartmarket123@gmail.com
-                    </span>
-                    <br><br>
-                    <span>
-                        <img src="..\First-Assignment\instalogo.webp" style="width: 20px; height: 20px" alt="instagram logo">
-                    </span>
-                    <span style="color: rgb(0, 0, 0);font-size: 25px">
-                        Instagram:
-                    </span>
-                    <a href ="https://www.instagram.com/quartmarket?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="text-decoration: none; color: rgb(0, 0, 0);font-size:25px;" target="_blank">
-                        @quartmarket
-                    </a>
-                <br>
-               <br>
-                <span style="color: rgb(0, 0, 0);font-size: 25px">
-                    Adress:
-                </span>
-                <span style="color: rgb(0, 0, 0);font-size: 25px;">
-                    Valtera Perića 20, Sarajevo 71000
-                </span>
+                </form>
             </section>
-    </body>
 
+            <section class="media-section">
+                <h1>MEDIA</h1>
+                <br>
+                <p><span>Email:</span> quartmarket123@gmail.com</p>
+                <br>
+                    <img src="../First-Assignment/instalogo.webp" alt="Instagram logo" style="width: 15px; height: 15px;" class="social-icon">
+
+                    <span>Instagram:</span>
+                    <a href="https://www.instagram.com/quartmarket" target="_blank" id="insta">@quartmarket</a>
+                    <br><br>
+                <p><span>Address:</span> <a href="https://www.google.com/maps" target="_blank">Valtera Perića 20, Sarajevo 71000</a></p>
+            </section>
+        </div>
+    </div>
+    <footer >
+        <h3>NEJRA ZURAPI</h3> 
+        <p>Foundations of Web Development</p>
+    </footer>
+</body>
 </html>
