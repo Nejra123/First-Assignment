@@ -41,7 +41,7 @@ p {
     color: aliceblue;
 }
 
-.main-container {
+.main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -49,7 +49,7 @@ p {
     gap: 40px;
 }
 
-.contact-section {
+.kontaktforma {
     background: aliceblue;
     color: #400002;
     padding: 20px;
@@ -57,19 +57,18 @@ p {
     width: 350px;
 }
 
-.contact-section h1 {
+.kontaktforma h1 {
     font-size: 32px;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.contact-section label {
+.kontaktforma label {
     font-size: 16px;
-    margin: 10px 0 5px;
+    margin: 10px;
 }
 
-.contact-section input,
-.contact-section select {
+.kontaktforma input, .kontaktforma select {
     width: 100%;
     padding: 8px;
     border: 2px solid #400002;
@@ -77,31 +76,30 @@ p {
     margin-bottom: 10px;
 }
 
-.contact-section textarea {
+.kontaktforma textarea {
     height: 100px;
     width: 100%;
     border-radius: 20px;
 }
 
-.contact-section button {
+.kontaktforma button {
     background-color: #400002;
     color: aliceblue;
     border: none;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 16px;
     margin-top: 10px;
-    align-self: center;
     width: 100%;
 }
 
-.right-content {
+.rightcontainer {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.right-content section {
+.rightcontainer section {
     background: aliceblue;
     color: #400002;
     padding: 20px;
@@ -109,12 +107,43 @@ p {
     width: 350px;
 }
 
-.media-section p {
+.media p {
     color: #400002;
 }
 
 #insta {
     color: #400002;
+}
+
+
+.customersat button{
+
+    background-color: #400002;
+    color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 59px;
+    margin-bottom: 7px; 
+    width: 60%;
+
+}
+
+.products button {
+
+    background-color: #400002;
+    color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 59px;
+    margin-bottom: 7px;
+    width: 60%;
+
 }
 
 .aboutuscontainer {
@@ -150,7 +179,7 @@ table {
     width: 40%;
     border: 2px solid aliceblue;
     border-radius: 20px;
-    border-collapse: separate;
+    
 }
 
 th, td {
@@ -172,7 +201,7 @@ hr {
 }
 
 @media screen and (max-width: 950px) {
-    .main-container {
+    .main {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -180,13 +209,13 @@ hr {
         padding: 15px;
         gap: 20px;
     }
-    .contact-section,
-    .right-content,
-    .products-section {
+    .kontaktforma,
+    .rightcontainer,
+    .products {
         width: 90%;
         max-width: 400px;
-        margin: 10px 0;
-        padding: 20px;
+        margin: 10px;
+       
     }
     #img1{
 
@@ -200,31 +229,31 @@ hr {
         
         }
     
-        .aboutus h1{
+    .aboutus h1{
 
-            font-size: 30px;
+        font-size: 30px;
             
              }
-             .aboutus p{
+    .aboutus p{
             
-                word-spacing: 5PX;
-                font-size: 15px;
-             }
+            word-spacing: 5PX;
+            font-size: 15px;
+            }
             
-             .aboutus h2{
+    .aboutus h2{
             
-                font-size: 20px;
-                text-transform: uppercase;
+            font-size: 20px;
+            text-transform: uppercase;
 
-             }
+            }
 
-             table {
-                width: 20%; 
+        table {
+        width: 20%; 
             }
         
-            th, td {
-                font-size: 2px; 
-                padding: 1px; 
+        th, td {
+            font-size: 2px; 
+            padding: 1px; 
             }
         }
 
@@ -236,7 +265,7 @@ hr {
         display: flex;
         flex-direction: column;
     }
-    .main-container {
+    .main {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -244,9 +273,9 @@ hr {
         padding: 10px;
         gap: 15px;
     }
-    .contact-section,
-    .right-content,
-    .products-section {
+    .kontaktforma,
+    .rightcontainer,
+    .products {
         width: 100%;
         margin: 5px 0;
         padding: 15px;
@@ -299,7 +328,6 @@ hr {
 footer{
 
     margin-top: auto;
-    bottom:0;
     width:auto;
     display:flex;
     margin-bottom: 0;
