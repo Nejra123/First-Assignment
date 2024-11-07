@@ -1,0 +1,199 @@
+$primrary: #1e0002;
+$secondary:aliceblue;
+$footer:rgb(68, 10, 10);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin position{
+
+    display: flex;
+    align-items: center;
+}
+body{
+
+background-color: $primrary;
+font-family: Arial, Helvetica, sans-serif;
+min-height: 100vh; 
+
+
+}
+
+main {
+    flex: 1; 
+}
+h1{
+color: $secondary;
+font-size: 50px;
+text-align: center;
+
+
+
+}
+#details{
+color:$secondary;
+font-size: 30px
+
+}
+
+nav {
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    @include position();
+    margin-left: 10px;
+
+    a {
+    font-size: 23px;
+
+
+
+    }
+    a:hover {
+    color: #ff4e51;
+}
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+hr{
+
+    margin-top: 10px;
+    
+    }
+
+section p{
+
+    color: $secondary;
+    font-size: 30px;
+    font-weight: BOLD;
+   
+    
+
+}
+.suppliers{
+    @include position();
+    flex-direction: column;
+
+
+}
+ol{
+    
+    list-style:circle;
+   
+    li{
+    
+    color: $secondary; 
+    }
+
+
+}
+
+footer{
+
+    margin-top: auto;
+    width:100%;
+    display:flex;
+    margin-bottom: 0;
+    flex-direction:column;
+    background-color: rgb(68, 10, 10);
+    height: 80px;
+    text-align: center;
+    justify-content: center;
+}
+    p{
+        color: $secondary;
+        margin-top: 0;
+    }
+    h3{
+
+        color: $secondary;
+        margin-bottom: 0;
+    }
+    
+    
+
+    .video{
+
+       
+        text-align: center;
+
+       
+
+    }
+    video{
+        width: 700px;
+        height: 500px;}
+
+    @media screen and (max-width:950px){
+
+
+        nav a{
+
+            font-size: 15px;
+            
+            }
+
+            h1{
+                font-size: 40px;
+            }
+            #details{
+                
+                font-size: 25px
+                
+                }
+                
+            video{
+                width: 600px;
+                height: 400px;}
+
+    }
+
+    @media screen and (max-width:500px){
+
+
+        nav a{
+
+            font-size: 10px;
+            
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+            }
+
+            h1{
+                font-size: 30px;
+            }
+            #details{
+                
+                font-size: 20px
+                
+                }
+            section p{
+
+                
+                font-size: 25px;
+                
+            }
+            video{
+                width: 500px;
+                height: 300px;}
+    }
+    @media screen and (max-width:450px){
+
+
+        video{
+            width: 400px;
+            height: 200px;
+        }
+        }
+    
+        
