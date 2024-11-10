@@ -13,7 +13,7 @@ body {
 
 }
 
-nav {
+/*nav {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
@@ -28,6 +28,14 @@ nav a{
 
 font-size: 23px;
 
+}*/
+
+.nav-link {
+    font-size: 23px;
+}
+.navbar-brand{
+    font-size: 23px;
+    text-transform: uppercase;
 }
 a{
 
@@ -35,10 +43,10 @@ a{
     color:aliceblue ;
 }
 
-nav a:hover {
+/*nav a:hover {
     color: #ff4e51;
    
-}
+}*/
 
 hr{
 
@@ -104,16 +112,22 @@ justify-content: center;
 
 
 }
+footer h3{
+
+       
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
 
 
 @media screen and (max-width:880px){
 
 
-    nav a{
+   /* nav a{
 
         font-size: 15px;
         
-        }
+        }*/
 
     .title h1{
 
@@ -148,14 +162,14 @@ justify-content: center;
 
 
 
-    nav {
+  /*  nav {
         display: flex;
         flex-direction: column}
     nav a{
 
         font-size: 15px;
         
-        }
+        }*/
 
     .title h1{
 
@@ -184,4 +198,4 @@ justify-content: center;
         }
         
         }
-        
+      
