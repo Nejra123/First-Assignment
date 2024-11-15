@@ -96,6 +96,33 @@ p {
     margin-top: 10px;
     width: 100%;
 }
+#prof{
+
+  color: #400002;
+}
+.btn {
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s; 
+    
+}
+
+
+.btn:hover, .btn:focus {
+    transform: translateY(-3px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #400002;
+   
+
+    
+}
+
+.btn:active {
+    transform: translateY(-1px); 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
 
 .rightcontainer {
     display: flex;
@@ -116,7 +143,7 @@ p {
     width: 350px;
 }
 
-.media p {
+.media p, a {
     color: #400002;
 }
 
@@ -222,6 +249,31 @@ th, td {
     align-items: center;
 }
 */
+
+.fade.show {
+    opacity: 0; 
+    transform: scale(0.8); 
+    animation: popIn 0.5s ease-out forwards;
+    animation-delay: 0.5s; 
+  }
+  
+ 
+  @keyframes popIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1.1); 
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1); 
+    }
+  }
+  
+  
 .table-hover tr:hover{
 
     background-color:  rgb(68, 10, 10);
@@ -258,7 +310,7 @@ hr {
         font-size: 15px;
         
         }
-    
+}
   /* .aboutus h1{
 
         font-size: 30px;
@@ -285,7 +337,7 @@ hr {
             font-size: 2px; 
             padding: 1px; 
             }*/
-        }
+        
 
 
 @media screen and (max-width: 550px) {
@@ -360,7 +412,7 @@ footer{
     display:flex;
     margin-bottom: 0;
     flex-direction:column;
-    background-color: rgb(68, 10, 10);
+    background-color:#331b1b;
     height: 80px;
     text-align: center;
     justify-content: center;
